@@ -56,6 +56,11 @@ class Song
 	  song.name = new[1].split(".").first
 	  song.save
 	 end
+	 
+  def self.destroy_all
+    @@all.clear 
+  end
+	 
 end
 
 
